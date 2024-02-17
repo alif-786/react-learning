@@ -1,6 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-
-export const store = configureStore({});
+import todoReducer from "../features/todo/todoSlice";
+export const store = configureStore({
+    reducer: todoReducer
+});
 
 // create a api request to the github users
 
